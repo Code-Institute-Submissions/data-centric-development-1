@@ -8,6 +8,12 @@ Welcome to Derek Dhammaloka's Milestone Project on Data Centric Development (DCD
 
 ## Technologies Used
 
+Materialize
+CSS
+jQuery
+Python Flask
+MongoDB
+
 ## Testing
 
 ## Deployment
