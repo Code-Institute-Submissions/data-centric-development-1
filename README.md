@@ -6,20 +6,24 @@ delete holidays as well as categories.
 
 ## UX
 
+My goal on Data Centric Development was to provide information on holidays, as well as
+adding (creating), editing (updating) and deleting holidays.
+
 As a user, I want to be able to create, read, update and delete holiday.
 I want to find out a holiday that fits my needs (e.g. in terms of categories).
 I want to delete a holiday that does not fit my needs (e.g. in terms of categories).
 I want to modify the description of my holiday (e.g. the hotel is closed for refurbishment
 and an alternative hotel is provided).
-I want to add a holiday as soon as it becomes available.
+I want to add a holiday as soon as it becomes available for my needs.
+
+Wireframes are available in the wireframes folder.
+Schema is available in the dbdiagram folder.
+
+## Features
 
 Features include Create (Add), Read (Get), Update (Edit) and Delete Holidays and Categories.
 
 Fields include Category Name, Holiday Name, Holiday Description, Nights and Depart Date.
-
-Wireframes are available in the wireframes folder.
-Schema is available in the dbdiagram folder.
- 
 
 ## Technologies Used
 
@@ -42,7 +46,9 @@ jQuery at https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
 
 ## Media
 
+
+
 ## Acknowledgements
 
 Mentor - Olawaseun Owonikoko
- 
+
