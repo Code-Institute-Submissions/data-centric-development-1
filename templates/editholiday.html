@@ -6,13 +6,16 @@
 
 <div class="row">
     <!-- Create Form -->
-    <form action="{{url_for('update_task', task_id=task._id) }}" method="POST" class="col s12">
+    <form action="{{url_for('update_holiday', holiday_id=holiday._id) }}" method="POST" class="col s12">
       <div class="row">
         <div class="input-field col s12">
-            <i class="material-icons prefix">pole</i>
+            <i class="material-icons prefix">poll</i>
+            <!-- Select Category -->
             <select id="category" name="category_name">
               <option value="" disabled selected>Choose Category</option>
+              <!-- For Loop -->
               {% for cat in categories %}
+              <!-- If-Else Statement -->
               {% if cat.category_name == task.category_name %}
               <option value="{{cat.category_name}}" selected>{{cat.category_name}}
               </option>
@@ -22,29 +25,43 @@
                {% endif %}
               {% endfor %}
             </select>
-        <label>Task Category</label>
+        <label>Holiday Category</label>
       </div>
   </div>   
         
+        <!-- Input for Holiday Name -->
         <div class="row">
             <div class="input-field col s12">
-                <i class="material-icons prefix">assignment</i>
-                <input id="task_name" name="task_name" type="text" class="validate" value="{{task.task_name}}">
-                <label for="icon_prefix">Task Name</label>
+                <i class="material-icons prefix">hotel</i>
+                <input id="holiday_name" name="holiday_name" type="text" class="validate" value="{{holiday.holiday_name}}">
+                <label for="icon_prefix">Holiday Name</label>
             </div>
         </div>
+        
+        <!-- Input for Holiday Description -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">subject</i>
-                <textarea name="task_description" id="task_description" class="materialize-textarea">{{task.task_description}}</textarea>
-                <label for="icon_telephone">Task Description</label>
+                <textarea name="holiday_description" id="holiday_description" class="materialize-textarea">{{holiday.holiday_description}}</textarea>
+                <label for="icon_telephone">Holiday Description</label>
             </div>
         </div>
+        
+        <!-- Input for Nights -->
+         <div class="row">
+            <div class="input-field col s12">
+                <i class="material-icons prefix">brightness_3</i>
+                <input id="nights" name="nights" type="text">
+                <label for="icon_prefix">Nights</label>
+            </div>
+        </div>
+        
+        <!-- Input for Depart Date with datepicker class -->
         <div class="row">
             <div class="input-field col s12">
                 <i class="material-icons prefix">today</i>
                 <input id="due_date" name="due_date" type="text" class="datepicker">
-                <label for="icon_prefix">Due Date</label>
+                <label for="icon_prefix">Depart Date</label>
             </div>
         </div>
         
@@ -58,12 +75,13 @@
     </form>
 </div>
 
+<!-- Parse a Date -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function() {
         
-        due_date = Date.parse('{{task.due_date}}');
-        $('#due_date').pickadate('picker').set('select', due_date, {format: 'dd/mm/yyyy'}).trigger('change');
+        depart_date = Date.parse('{{holiday.depart_date}}');
+        $('#depart_date').pickadate('picker').set('select', depart_date, {format: 'dd/mm/yyyy'}).trigger('change');
     });
 </script>
 
