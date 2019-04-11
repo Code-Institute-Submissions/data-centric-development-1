@@ -32,8 +32,7 @@ Schema is available in the dbdiagram folder.
 Material Icons (e.g. hotel) at https://fonts.googleapis.com/icon?family=Material+Icons
 https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css
 
-
-
+jQuery at https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
 
 ## Testing
 
