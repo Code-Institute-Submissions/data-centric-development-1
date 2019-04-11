@@ -15,8 +15,11 @@ I want to add a holiday as soon as it becomes available.
 
 Features include Create (Add), Read (Get), Update (Edit) and Delete Holidays and Categories.
 
+Fields include Category Name, Holiday Name, Holiday Description, Nights and Depart Date.
+
 Wireframes are available in the wireframes folder.
 Schema is available in the dbdiagram folder.
+ 
 
 ## Technologies Used
 
@@ -25,6 +28,12 @@ Schema is available in the dbdiagram folder.
 * jQuery
 * Python Flask
 * MongoDB
+
+Material Icons (e.g. hotel) at https://fonts.googleapis.com/icon?family=Material+Icons
+https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css
+
+
+
 
 ## Testing
 
