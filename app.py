@@ -19,7 +19,7 @@ mongo = PyMongo(app)
 @app.route("/")
 @app.route("/get_holidays")
 def get_holidays():
-    return render_template("holidays.html", holidays=mongo.db.holidays.find().sort("holiday_title"))
+    return render_template("holidays.html", holidays=mongo.db.holidays.find())
 
 # Add Holiday
     
