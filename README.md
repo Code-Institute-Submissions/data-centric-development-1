@@ -6,7 +6,7 @@ delete holidays as well as categories.
 
 ## UX
 
-My goal on Data Centric Development was to provide information on holidays, as well as
+My goal on Data Centric Development is to provide information on holidays, as well as
 adding (creating), editing (updating) and deleting holidays.
 
 As a user, I want to be able to create, read, update and delete holiday.
@@ -18,6 +18,10 @@ I want to add a holiday as soon as it becomes available for my needs.
 
 Wireframes are available in the wireframes folder.
 Schema is available in the dbdiagram folder.
+
+[Wireframes](wireframes/)
+[BCS](https://www.bcs.org)
+[Schema](dbdiagram/schema.png)
 
 ## Features
 
@@ -33,12 +37,16 @@ Fields include Category Name, Holiday Name, Holiday Description, Nights and Depa
 * Python Flask
 * MongoDB
 
-Material Icons (e.g. hotel) at https://fonts.googleapis.com/icon?family=Material+Icons
+Material Icons (e.g. hotel) at 
+[Material Icons](https://fonts.googleapis.com/icon?family=Material+Icons)
+
 https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css
 
 jQuery at https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
 
 ## Testing
+
+Resized the browser window.
 
 ## Deployment
 
@@ -51,4 +59,5 @@ jQuery at https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js
 ## Acknowledgements
 
 Mentor - Olawaseun Owonikoko
+Visit to website https://materializecss.com for use of colors, icons, etc.
 
