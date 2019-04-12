@@ -14,12 +14,12 @@ app.config["MONGO_URI"] = os.getenv('MONGO_URI', 'mongodb://localhost')
 
 mongo = PyMongo(app)
 
-# Get (Read) Holidays
+# Get (Read) Holidays with Holiday Title in Alphabetical Order
 
 @app.route("/")
 @app.route("/get_holidays")
 def get_holidays():
-    return render_template("holidays.html", holidays=mongo.db.holidays.find().sort("depart_date"))
+    return render_template("holidays.html", holidays=mongo.db.holidays.find().sort("holiday_title"))
 
 # Add Holiday
     
@@ -61,7 +61,7 @@ def delete_holiday(holiday_id):
     mongo.db.holidays.remove({'_id': ObjectId(holiday_id)})
     return redirect(url_for("get_holidays"))
 
-# Get (Read) Categories
+# Get (Read) Categories with Category Name in Alphabetical Order
 
 @app.route("/get_categories")
 def get_categories():
