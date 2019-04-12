@@ -46,7 +46,7 @@ def update_holiday(holiday_id):
     holidays = mongo.db.holidays
     holidays.update( {'_id': ObjectId(holiday_id)},
     {
-        'holiday_name':request.form.get('holiday_name'),
+        'holiday_title':request.form.get('holiday_title'),
         'category_name':request.form.get('category_name'),
         'holiday_description': request.form.get('holiday_description'),
         'nights': request.form.get('nights'),
