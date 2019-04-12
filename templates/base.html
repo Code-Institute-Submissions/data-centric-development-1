@@ -8,19 +8,19 @@
     </head>
     <body>
         <header>
-            <!-- Set Up Navigation -->
+            <!-- Set Up Navigation with Purple  -->
             <nav>
                 <div class="nav-wrapper">
                   <a href="{{url_for('get_holidays')}}" class="brand-logo" title="Home Page">Holiday Manager</a>
                   <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
-                  <ul id="nav-mobile" class="right hide-on-med-and-down">
+                  <ul id="nav-mobile" class="right hide-on-med-and-down purple">
                     <li><a href="{{url_for('get_holidays')}}">Home</a></li>
                     <li><a href="{{url_for('add_holiday')}}">New Holiday</a></li>
                     <li><a href="{{url_for('get_categories')}}"}>Manage Categories</a></li>
                   </ul>
                   
-                  <!-- Mobile Version -->
-                  <ul class="side-nav" id="mobile-demo">
+                  <!-- Mobile Version with Side Navigation Background Color Blue Lighten-4 -->
+                  <ul class="side-nav blue lighten-4" id="mobile-demo">
                     <li><a href="{{url_for('get_holidays')}}">Home</a></li>
                     <li><a href="{{url_for('add_holiday')}}">New Holiday</a></li>
                     <li><a href="{{url_for('get_categories')}}">Manage Categories</a></li>
